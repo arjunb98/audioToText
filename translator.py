@@ -37,6 +37,5 @@ def js_get_timestamps(audio_path, query):
     data = json.loads(data)
     return get_timestamp(query, data)
 
-if __name__ == '__main__':
-    #set_audio('./testAudio/bpn5min.mp3')
-    print(js_get_timestamps('./testAudio/bpn5min.mp3', 'gradient'))
+def sample():
+    return "success"

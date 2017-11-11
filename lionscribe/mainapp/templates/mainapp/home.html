@@ -1,5 +1,18 @@
 {% extends "mainapp/header.html" %}
 
 {% block content %}
-<p>Welcome to LionScribe! This is an application built to host the 1st place fall 2017 HackPSU hack.</p>
+<!--<p>Welcome to LionScribe! This is an application built to host the 1st place fall 2017 HackPSU hack.</p>-->
+<p>Just search for topics covered in the video to jump to that point in the video!</p>
+<center>
+    <video id="video1" controls="controls">
+        <source src="http://personal.psu.edu/tpm5183/HACKPSU/19. Dynamic Programming I Fibonacci Shortest Paths.mp4" type="video/mp4"/>
+    </video>
+
+    </br>
+    <div class="row">
+        <input name="texturl" type="search" class="form-control col-sm-10" id="texturl" placeholder="What topic are you interested in?" title="" value="">
+        <button class="btn btn-outline-info col-sm-1" id="PREV"  onclick="nextPosRev(document.getElementById('texturl').value)"> PREV </button>
+        <button class="btn btn-outline-info col-sm-1" id="NEXT" onclick="nextPosFor(document.getElementById('texturl').value)"> NEXT </button>
+    </div>
+</center>
 {% endblock %}
